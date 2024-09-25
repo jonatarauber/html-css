@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+            border: 1px solid black;
+            border-bottom: 0px;
+        }
+
+        table{
+            width: 500px;
+            border-collapse: collapse;
+            position: relative;
+        }
+
+        td, th{
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        thead, tfoot{
+            background-color: rgb(95, 95, 95);
+            color: white;
+        }
+
+        thead > tr > th{
+            position: sticky;
+            top: 0;
+            background-color: rgb(95, 95, 95);
+        }
+        td.num{
+            text-align: right;
+        }
+        td.porc{
+            text-align: center;
+        }
+        
+        tbody > tr:nth-child(2n){
+            background-color: lightgray;
+        }
+        
+        /*
+        tbody > tr:nth-child(odd){
+            background-color: white;
+        }
+        tbody > tr:nth-child(even){
+            background-color: lightgray;
+        }
+        */
+    </style>
+    <title>Tabelas</title>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+      <!-- 
+    ANATOMIA PARA TABELAS GRANDES 
+    TABLE
+        CAPTION
+        THEAD
+            TR, TD, TH
+        TBODY
+            TR, TD, TH
+        TFOOT
+            TR, TD, TH
+    -->
+    <table>
+        <caption>População das Unidades Federativas</caption>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col">População</th>
+                <th scope="col" style="width: 50px;">% da população total</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45 919 049</td>
+                <td class="porc">21,9%</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21 168 791</td>
+                <td class="porc">10,9%</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17 264 943</td>
+                <td class="porc">8,2%</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">14 873 064</td>
+                <td class="porc">7,1%</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="num">11 824 665</td>
+                <td class="porc">5,64%</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="num">11 229 915</td>
+                <td class="porc">5,36%</td>
+            </tr>
+            <tr>
+                <td>Pernanbuco</td>
+                <td class="num">9 539 029</td>
+                <td class="porc">4,46%</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td class="num">9 233 656</td>
+                <td class="porc">4,33%</td>
+            </tr>
+            <tr>
+                <td>Pará</td>
+                <td class="num">8 664 306</td>
+                <td class="porc">4,1%</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="num">8 058 447</td>
+                <td class="porc">3,75%</td>
+            </tr>
+            <tr>
+                <td>Goiás</td>
+                <td class="num">7 350 483</td>
+                <td class="porc">3,47%</td>
+            </tr>
+            <tr>
+                <td>Maranhão</td>
+                <td class="num">7 010 960</td>
+                <td class="porc">3,34%</td>
+            </tr>
+            <tr>
+                <td>Amazonas</td>
+                <td class="num">4 281 209</td>
+                <td class="porc">1,94%</td>
+            </tr>
+            <tr>
+                <td>Paraíba</td>
+                <td class="num">4 145 040</td>
+                <td class="porc">1,96%</td>
+            </tr>
+            <tr>
+                <td>Epírito Santa</td>
+                <td class="num">4 102 129</td>
+                <td class="porc">1,89%</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso</td>
+                <td class="num">3 836 399</td>
+                <td class="porc">1,8%</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Norte</td>
+                <td class="num">3 446 071</td>
+                <td class="porc">1,63%</td>
+            </tr>
+            <tr>
+                <td>Piauí</td>
+                <td class="num">3 375 646</td>
+                <td class="porc">1,61%</td>
+            </tr>
+            <tr>
+                <td>Alagoas</td>
+                <td class="num">3 220 104</td>
+                <td class="porc">1,54%</td>
+            </tr>
+            <tr>
+                <td>Distrito Federal</td>
+                <td class="num">2 982 815</td>
+                <td class="porc">1,39%</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso do Sul</td>
+                <td class="num">2 901 895</td>
+                <td class="porc">1,36%</td>
+            </tr>
+            <tr>
+                <td>Sergipe</td>
+                <td class="num">2 291 077</td>
+                <td class="porc">1,09%</td>
+            </tr>
+            <tr>
+                <td>Rondônia</td>
+                <td class="num">1 746 227</td>
+                <td class="porc">0,78%</td>
+            </tr>
+            <tr>
+                <td>Tocantins</td>
+                <td class="num">1 577 342</td>
+                <td class="porc">0,74%</td>
+            </tr>
+            <tr>
+                <td>Acre</td>
+                <td class="num">880 631</td>
+                <td class="porc">0,41%</td>
+            </tr>
+            <tr>
+                <td>Amapá</td>
+                <td class="num">802 837</td>
+                <td class="porc">0,36%</td>
+            </tr>
+            <tr>
+                <td>Roraima</td>
+                <td class="num">716 793</td>
+                <td class="porc">0,31%</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">Total de Habitantes</th>
+                <td class="num">212 583 720</td>
+                <td class="porc">100%</td>
+            </tr>
+        </tfoot>
+    </table>
+    <h1>População brasileira</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid tempore modi, fuga labore delectus ea animi eius doloribus placeat a aut explicabo quos voluptate necessitatibus natus officiis officia vero id.</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus molestiae repudiandae doloremque adipisci laudantium deserunt maiores debitis, tempore impedit voluptate ea illum aliquid optio porro quo enim velit sequi rem?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis facere autem vel laboriosam eum corrupti deleniti alias ipsum assumenda? Vel sit sint quaerat natus laboriosam nihil exercitationem corporis amet vero.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti ducimus ad asperiores dolor amet minima quia ab ex itaque nulla tenetur dolore a, eius quas, possimus vero cumque quos! Laboriosam!</p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit pariatur obcaecati modi sed quasi tenetur, sunt vitae iusto repellat dicta vel quo repellendus aperiam nostrum voluptate deserunt? Minus, quas incidunt?
+    </p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde quidem explicabo nemo possimus, repellat facere cum iusto, provident officia, pariatur aspernatur ratione voluptatibus odio omnis dolorem quia voluptatum laborum ea?</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam eos repudiandae pariatur repellat mollitia eum quod quis iste labore, saepe similique laudantium, nihil quas officia vero reprehenderit fuga cum modi?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi ratione, aliquid aspernatur unde saepe ducimus nulla minus dolorum quod officiis iure fugiat sunt nemo debitis officia odit harum tempore consectetur.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque magni sapiente porro expedita eveniet laudantium architecto error, consequatur tempore placeat nisi harum corporis magnam ex odit autem dolorem. Optio, aperiam.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur sed hic et numquam minus odio cum accusamus nihil quidem dolorem amet aperiam repudiandae dolorum doloribus quas, ullam ratione, eius ipsa?</p>
+</body>
+  
+</html>
